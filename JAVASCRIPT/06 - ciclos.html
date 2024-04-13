@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+// ciclo for
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// ciclo while
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+// ciclo do while
+let j = 0;
+do {
+    console.log(j);
+    j++;
+} while (j < 10);
+
+// ciclo for in
+let vetor = [1, 2, 3, 4, 5];
+for (let i in vetor) {
+    console.log('vetor[', i, ']: ', vetor[i]);
+}
+
+// ciclo for of
+for (let elemento of vetor) {
+    console.log('elemento: ', elemento);
+}
+
+// for each
+vetor.forEach((elemento, index) => {
+    console.log('elemento: ', elemento);
+    console.log('index: ', index);
+});
+
+//ciclo para fazer uma lista
+document.write('<ul>');
+for (let i = 0; i < 5; i++) {
+    document.write('<li>' + (i+1) + '</li>');
+}
+document.write('</ul');
+
+//vetor que diz Olá Mundo Lindo Tudo Bem?
+let vetor5 = ['Olá', 'Mundo', 'Lindo', 'Tudo', 'Bem?'];
+//ciclo para escrever este vetor
+document.write('<ul>');
+for (let i = 0; i < vetor5.length; i++) {
+    document.write('<li>' + vetor5[i] + '</li>');
+}
+document.write('</ul');
+
+//ciclo para fazer uma lista
+document.write('<ul>');
+vetor5.forEach((elemento) => {
+    document.write('<li>' + elemento + '</li>');
+});
+document.write('</ul');
+
+</script>

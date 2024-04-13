@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert('Olá Mundo');
+
+        let pessoa = {
+            nome: '',
+            idade: 0
+        }
+
+        pessoa.nome = prompt('Qual é o teu nome?');
+        console.log('nome: ', pessoa.nome);
+        
+        do {
+            pessoa.idade = Number(prompt('Qual é a tua idade?'));
+        } while (
+            !(pessoa.idade || pessoa.idade ===0) 
+        || pessoa.idade <= 0);
+
+        console.log('idade: ', pessoa.idade);
+
+        confirm('O teu nome é mesmo ' + pessoa.nome + ' e tens ' + pessoa.idade + ' anos?)');
+        if (confirm) {
+            alert('Obrigado por confirmar');
+        } else {
+            alert('Por favor, confirma os teus dados');
+        }
+    </script>
+</body>
+</html>
+

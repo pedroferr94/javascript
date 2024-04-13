@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var variavel01;
+
+        console.log('variavel01: ', variavel01)
+
+        //varialvel com valor
+
+        let nome = 'Pedro';
+
+        console.log('nome: ', nome)
+
+        //variavel string
+
+        nome = "Paulo"
+        console.log('nome: ', nome)
+
+        //variavel string outra forma
+
+        nome = `teixeira`
+        console.log('nome: ', nome)
+
+        //variavel string outra forma
+
+        nome = 'Pedro'
+        let ultimoNome = "Ferreira";
+
+        //concatenar string
+
+        let nomeCompleto = nome + ' ' + ultimoNome;
+        console.log('nomeCompleto: ', nomeCompleto);
+
+        //concatenar string outra forma
+
+        nomeCompleto = `${nome} ${ultimoNome}`;
+        console.log('nomeCompleto: ', nomeCompleto);  
+        
+        //concatenar string 3
+
+        let idade = 25;
+        nomeCompleto = `${nome} ${ultimoNome} tem ${idade} anos`;
+        console.log('nomeCompleto: ', nomeCompleto); 
+
+        //concatenar string 4
+
+        let frase = `O ${nome} ${ultimoNome} tem ${idade} anos e é um programador`;
+        console.log('frase: ', frase);
+
+        console.log('frase.length: ', frase);
+        console.log('frase.length: ', frase.length.charAt(0));
+        console.log('frase.length: ', frase.toUpperCase());
+        console.log('frase.length: ', frase.toLowerCase());
+        console.log('frase.length: ', frase.trim(' '));
+        console.log('frase.length: ', frase.split(' '));
+        console.log('frase.length: ', frase.split(''));
+        console.log('frase.length: ', frase.replace('Pedro', 'João'));
+        console.log('frase.length: ', frase.includes('Pedro'));
+        console.log('frase.length: ', frase.indexOf('Pedro'));
+        console.log('frase.length: ', frase.lastIndexOf('Pedro'));
+        console.log('frase.length: ', frase.slice(0, 10));
+        console.log('frase.length: ', frase.substring(0, 10));
+        console.log('frase.length: ', frase.substr(0, 10));
+        console.log('frase.length: ', frase.concat(' ', 'e é muito inteligente'));
+        console.log('frase.length: ', frase.concat(' ', 'e é muito inteligente'));
+        console.log('frase.length: ', frase.repeat(2));
+        
+    </script>
+</body>
+</html>

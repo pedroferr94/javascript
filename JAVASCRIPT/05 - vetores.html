@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //vetor
+
+        let vetor1 = [];
+        let vetor2 = new Array();
+        console.log('vetor1: ', vetor1);
+        console.log('vetor2: ', vetor2);
+
+        let vetor3 = ['Pedro', 'Paulo', 'Teixeira', 'Ferreira', 'Carlos'];
+        console.log('vetor: ', vetor);
+        console.log('vetor[0]: ', vetor[0]);
+        console.log('vetor[1]: ', vetor[1]);
+        console.log('vetor[2]: ', vetor[2]);
+        console.log('vetor[3]: ', vetor[3]);
+        console.log('vetor[4]: ', vetor[4]);
+
+        //adicionar um elemento ao vetor
+        vetor3.push('Maria');
+
+        //remover o último elemento do vetor
+        let pop = vetor3.pop();
+
+        //remover o primeiro elemento do vetor
+        let shift = vetor3.shift();
+
+        //adicionar um elemento no início do vetor
+        vetor3.unshift('João');
+
+        //remover um elemento do vetor
+        vetor3.splice(2, 1);
+
+        //adicionar um elemento no meio do vetor
+        vetor3.splice(2, 0, 'José');
+
+        //alterar um elemento do vetor
+        vetor3[2] = 'José da Silva';
+
+        //percorrer um vetor
+        for (let i = 0; i < vetor3.length; i++) {
+            console.log('vetor3[', i, ']: ', vetor3[i]);
+        }
+
+        //percorrer um vetor
+        for (let i in vetor3) {
+            console.log('vetor3[', i, ']: ', vetor3[i]);
+        }
+
+        //percorrer um vetor
+        for (let elemento of vetor3) {
+            console.log('elemento: ', elemento);
+        }
+
+        //vetor de objetos
+        let pessoas = [
+            {nome: 'Pedro', idade: 20},
+            {nome: 'Paulo', idade: 25},
+            {nome: 'Teixeira', idade: 30},
+            {nome: 'Ferreira', idade: 35},
+            {nome: 'Carlos', idade: 40}
+        ];
+
+        //percorrer um vetor de objetos
+        for (let pessoa of pessoas) {
+            console.log('nome: ', pessoa.nome);
+            console.log('idade: ', pessoa.idade);
+        }
+
+        //Matriz
+        let matriz = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+        //percorrer Matriz
+        for (let linha of matriz) {
+            for (let elemento of linha) {
+                console.log('elemento: ', elemento);
+            }
+        }
+
+
+        /* NOTA: Copiar */
+    let copia01 = [];
+    for(let i = 0; i < array03.length; i++) {
+      copia01.push(array03[i]);
+    }
+    copia01.pop();
+    console.log('copia01:', copia01);
+    console.log('array03:', array03);
+    
+    /* NOTA: Copiar ex. 2 */
+    let copia02 = array03.map((x) => x);
+    copia02.pop(); // remove o último elemento
+    console.log('copia02:', copia02);
+    console.log('array03:', array03);
+
+    /* NOTA: Copiar ex. 3 */
+    let copia03 = [...array03];
+    copia03.pop(); // remove o último elemento
+    console.log('copia03:', copia03);
+    console.log('array03:', array03);
+
+    </script>
+    
+</body>
+</html>
